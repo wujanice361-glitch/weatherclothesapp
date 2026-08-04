@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# APIキーなどを保存した環境変数を無視する
+.env
+.env.local
