@@ -21,7 +21,7 @@ const App = () => {
 
   const getWeather = (e) => {
       e.preventDefault();
-      fetch ("https://api.weatherapi.com/v1/current.json?key=e200b57619284cd086b104419260408&q=" + city + "&aqi=no")
+      fetch ("https://api.weatherapi.com/v1/current.json?key=" + import.meta.env.VITE_WEATHER_API_KEY + "&q=" + city + "&aqi=no")
       .then(res=> res.json())
       .then(data => {
         getResults({

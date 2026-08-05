@@ -1,16 +1,25 @@
-# React + Vite
+# 🌤️ 天気予報 & AI服装提案アプリ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+指定した都市の現在の天気を取得し、その天候や気温に合わせたおすすめの服装をAIがリアルタイムで提案してくれるWebアプリケーションです。
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 機能概要
+- **リアルタイム天気取得**: WeatherAPI を利用して、世界中の都市の天気・気温・アイコンを表示
+- **AIによる服装アドバイス**: OpenRouter (LLM) APIを活用し、取得した天候データに基づいた服装の提案を自動生成
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ 使用技術
+- **フロントエンド**: React (Vite) / JavaScript (ES6+)
+- **API**: 
+  - [WeatherAPI](https://www.weatherapi.com/) (天気データ取得)
+  - [OpenRouter API](https://openrouter.ai/) (AIアドバイス生成)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💻 ローカルでの実行方法
+
+このリポジトリをダウンロードしてローカル環境で動かす手順です。
+
+### 1. リポジトリのクローン
+```bash
+git clone <ご自身のリポジトリURL>
+cd <フォルダ名>
